@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@400;700;900&display=swap');
 
 :root {
-  --primary-color: #000;
+  --primary-color: rgb(22, 22, 22);
   --secondary-color: #fff;
   --tertiary-color: #f80;
   --shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
@@ -10,11 +10,16 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-color);
-  font-size: 16px;
+  font-size: 1rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 0.8rem;
   }
 }
 img {
@@ -49,29 +54,29 @@ h4 {
 h2,
 .h2 {
   font-family: 'Patrick Hand CS', cursive;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   line-height: 1.25;
   text-align: center;
 }
 h3,
 .h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   line-height: 1.25;
 }
 h4,
 .h4 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.25;
 }
 h5,
 .h5 {
   color: var(--primary-color);
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.25;
 
 }
 p {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--secondary-color);
@@ -82,25 +87,35 @@ p {
   font-weight: bold;
   text-align: center;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 0.9rem;
+  }
   .p {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  p {
+    font-size: 0.8rem;
+  }
+  .p {
+    font-size: 1.1rem;
   }
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 .btn {
   font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25;
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 12px 24px;
-  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
   border: 1px solid transparent;
 }
 .btn:hover {
@@ -111,15 +126,15 @@ p {
   outline: none;
 }
 .btn.btn-lg {
-  font-size: 1.15em;
-  padding: 16px 24px;
+  font-size: 1.15rem;
+  padding: 1rem 1.5rem;
 }
 
 /* One Click Scrool Top Button*/
 .scroll-top {
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 2.8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
   background: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,18 +145,18 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 25px;
+  font-size: 1.56rem;
   color: var(--secondary-color) !important;
-  border: 2px solid var(--secondary-color);
+  border: 0.125rem solid var(--secondary-color);
   border-radius: 0;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 1.25rem;
+  right: 1.25rem;
   z-index: 9;
   cursor: pointer;
   -webkit-transition: all .3s ease-out 0s;
   transition: all .3s ease-out 0s;
-  border-radius: 5px;
+  border-radius: 0.31rem;
 }
 .scroll-top:hover {
   color: var(--tertiary-color) !important;
@@ -157,7 +172,7 @@ p {
   box-shadow: none;
 }
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 /*===== Navbar nine =====*/
@@ -180,7 +195,7 @@ p {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-area.navbar-nine {
-    padding: 10px 0;
+    padding: 0.625rem 0;
   }
 }
 .navbar-area.navbar-nine .navbar-brand {
@@ -196,10 +211,10 @@ p {
 .navbar-area.navbar-nine .navbar .navbar-toggler .toggler-icon {
   background-color: var(--secondary-color);
   display: block;
-  height: 2px;
-  margin: 5px 0;
+  height: 0.125rem;
+  margin: 0.312rem 0;
   position: relative;
-  width: 30px;
+  width: 1.875rem;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -227,11 +242,11 @@ p {
 }
 .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a {
   align-items: center;
-  border-radius: 5px;
+  border-radius: 0.312rem;
   color: var(--secondary-color);
   display: flex;
   font-weight: 500;
-  padding: 11px 16px;
+  padding: 0.687rem 1rem;
   position: relative;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -239,7 +254,7 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  margin: 14px 0;
+  margin: 0.875rem 0;
   opacity: 0.7;
 }
 .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a:hover {
@@ -250,7 +265,7 @@ p {
     border: 0;
     display: block;
     margin: 0;
-    padding: 10px 0;
+    padding: 0.625rem 0;
   }
 }
 .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a.active {
@@ -263,13 +278,13 @@ p {
   border: 1px solid var(--secondary-color);
   border-radius: 50%;
   color: var(--secondary-color);
-  font-size: 22px;
-  height: 40px;
-  line-height: 40px;
+  font-size: 1.375rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: 40px;
+  width: 2.5rem;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -281,15 +296,15 @@ p {
   background-color: var(--secondary-color);
 }
 
-/*===== SIDEBAR ONE =====*/
+/*===== sidebar one =====*/
 .sidebar-left {
   background-color: var(--tertiary-color);
   height: 100%;
   right: 0;
-  padding-top: 80px;
+  padding-top: 5rem;
   position: fixed;
   top: 0;
-  width: 350px;
+  width: 21.875rem;
   z-index: 999;
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -308,17 +323,17 @@ p {
 }
 @media (max-width: 767px) {
   .sidebar-left {
-    width: 250px;
+    width: 15.625rem;
   }
 }
 .sidebar-left .sidebar-close {
-  right: 30px;
+  right: 1.875rem;
   position: absolute;
-  top: 30px;
+  top: 1.875rem;
 }
 .sidebar-left .sidebar-close .close {
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 1.125rem;
   -webkit-transition: all 0.2s ease-out 0s;
   -moz-transition: all 0.2s ease-out 0s;
   -ms-transition: all 0.2s ease-out 0s;
@@ -333,7 +348,7 @@ p {
   transform: rotate(90deg);
 }
 .sidebar-left .sidebar-content {
-  padding: 0px 30px;
+  padding: 0rem 1.875rem;
 }
 .sidebar-left .sidebar-content .sidebar-logo a {
   color: var(--secondary-color);
@@ -344,18 +359,18 @@ p {
   color: var(--primary-color);
 }
 .sidebar-left .sidebar-content .sidebar-menu {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 .sidebar-left .sidebar-content .sidebar-menu ul {
-  margin-top: 15px;
+  margin-top: 0.93rem;
 }
 .sidebar-left .sidebar-content .sidebar-menu ul li a {
-  border-radius: 5px;
+  border-radius: 0.312rem;
   color: var(--secondary-color);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 24px;
-  padding: 8px 0;
+  line-height: 1.5rem;
+  padding: 0.5rem 0;
   position: relative;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -367,30 +382,30 @@ p {
 }
 .sidebar-left .sidebar-content .sidebar-menu ul li a:hover {
   color: var(--primary-color);
-  padding-left: 5px;
+  padding-left: 0.312rem;
 }
 .sidebar-left .sidebar-content .sidebar-social {
   margin-top: 30px;
 }
 .sidebar-left .sidebar-content .sidebar-social .social-title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 1.562rem;
 }
 .sidebar-left .sidebar-content .sidebar-social ul li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .sidebar-left .sidebar-content .sidebar-social ul li a {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   border: 2px solid var(--secondary-color);
   border-radius: 50%;
-  font-size: 18px;
-  height: 38px;
-  line-height: 38px;
+  font-size: 1.125rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
   text-align: center;
-  width: 38px;
+  width: 2.375rem;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -421,26 +436,26 @@ p {
 /*===== home section =====*/
 .header-eight {
   background: var(--primary-color);
-  padding: 110px 0 100px;
+  padding: 6.875rem 0 6.25rem;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight {
-    padding: 130px 0 80px;
+    padding: 8.125rem 0 5rem;
   }
 }
 @media (max-width: 767px) {
   .header-eight {
-    padding: 100px 0 60px 0;
+    padding: 6.25rem 0 3.75rem 0;
   }
 }
 .header-eight .header-image img {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .header-eight .header-image {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 }
 .header-eight .container span {
@@ -455,31 +470,31 @@ p {
 .header-eight .header-content h1 {
   color: var(--secondary-color);
   font-family: 'Patrick Hand CS', cursive;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight .header-content h1  {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 1.625rem;
+    line-height: 2rem;
   }
   .header-eight .header-content h1 span {
     font-size: 250%;
     line-height: 30px;
     margin-left: -30px;
-    padding: 30px;
+    padding: 1.875rem;
   }
 }
 @media (max-width: 767px) {
   .header-eight .header-content h1  {
-    font-size: 22px;
-    line-height: 20px;
+    font-size: 1.375rem;
+    line-height: 1.25rem;
   }
   .header-eight .header-content h1 span {
     font-size: 100%;
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-left: -30px;
-    padding: 30px;
+    padding: 1.875rem;
   }
 }
 .header-eight .header-content h1 span {
@@ -492,68 +507,67 @@ p {
   font-family: 'Patrick Hand CS', cursive;
   font-size: 1.2rem;
   line-height: 10px;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 /*===== about me section =====*/
 .about-five {
   background-color: var(--tertiary-color);
-  padding: 110px 0 25px;
+  padding: 6.875rem 0 1.562rem;
 }
 .about-five .container .p {
   color: var(--primary-color);
-  padding-top: 70px;
+  padding-top: 4.375rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-five {
-    padding-bottom: 25px;
-    padding-top: 100px;
+    padding-bottom: 1.562rem;
+    padding-top: 6.25;
   }
 }
 @media (max-width: 767px) {
   .about-five {
-    padding-bottom: 20px;
-    padding-top: 80px;
+    padding-bottom: 1.25rem;
+    padding-top: 5rem;
   }
 }
 .about-five-content{
-  padding-left: 50px;
+  padding-left: 3.125rem;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-five-content {
-    padding-left: 0;
-  }
-}
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .about-five-content {
     padding-left: 0;
   }
 }
 .about-five-content .about-five-tab {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 .about-five-content .about-five-tab nav .nav-tabs {
   border: none;
+  place-content: center;
+}
+@media (min-width: 768px) and (max-width: 1199) {
+  .about-five-content .about-five-tab nav .nav-tabs {
+    display: inline-flex;
+  }
 }
 .about-five-content .about-five-tab nav button {
   background-color: var(--primary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 4px;
+  border: 0.125rem solid var(--secondary-color);
+  border-radius: 0.25rem;
   color: var(--secondary-color);
+  font-size: 100%;
   font-weight: 600;
   margin-right: 25px;
-  padding: 10px 18px;
+  padding: 0.625rem 1.25rem;
   position: relative;
   text-transform: capitalize;
 }
 @media (max-width: 767px) {
   .about-five-content .about-five-tab nav button {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     width: 100%;
-  }
-  .about-five-content .about-five-tab nav button:last-child {
-    margin: 0;
   }
 }
 .about-five-content .about-five-tab nav button:hover {
@@ -561,37 +575,37 @@ p {
 }
 .about-five-content .about-five-tab nav button.active {
   background-color: var(--secondary-color);
-  border: 2px solid var(--primary-color);
+  border: 0.125rem solid var(--primary-color);
   color: var(--primary-color);
 }
 .about-five-content .about-five-tab nav button:last-child {
   margin-right: 0;
 }
 .about-five-content .about-five-tab .tab-content {
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 .about-five-content h2 {
   color: var(--primary-color);
 }
 .about-five-content .about-five-tab .tab-content p {
   color: var(--primary-color);
-  font-size: 21px;
-  margin-bottom: 20px;
+  font-size: 1.312rem;
+  margin-bottom: 1.25rem;
 }
 .about-image {
-  padding-left: 60px;
+  padding-left: 3.75rem;
   position: relative;
   z-index: 2;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-image {
-    margin-bottom: 70px;
-    padding-left: 30px;
+    margin-bottom: 4.375rem;
+    padding-left: 1.875rem;
   }
 }
 @media (max-width: 767px) {
   .about-image {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     padding-left: 0;
   }
 }
@@ -607,7 +621,7 @@ p {
   }
 }
 .about-image img {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 100%;
   z-index: 2;
 }
@@ -615,18 +629,18 @@ p {
 /*===== projects section=====*/
 .projects {
   background: var(--primary-color);
-  padding: 80px 0 25px;
+  padding: 5rem 0 1.56rem;
   position: relative;
   z-index: 2;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .projects {
-    padding: 80px 80px 25px;
+    padding: 5rem 5rem 1.56rem;
   }
 }
 @media (max-width: 767px) {
   .projects {
-    padding: 60px 0 20px;
+    padding: 3.75rem 0 1.25rem;
   }
 }
 .projects h2 {
@@ -634,7 +648,7 @@ p {
   text-align: center;
 }
 .projects .container .p {
-  padding-top: 70px;
+  padding-top: 4.375rem;
 }
 .card {
   background-color: var(--secondary-color);
@@ -645,7 +659,7 @@ p {
 }
 .card-text {
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 2rem 0;
 }
 .btn {
@@ -659,36 +673,42 @@ p {
 /*====	contact section ====*/
 .contact-section {
   background-color: var(--tertiary-color);
-  padding: 100px 0 25px;
+  padding: 6.25rem 0 1.562rem;
   position: relative;
   z-index: 3;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-section {
-    padding: 80px 0 25px;
+    padding: 5rem 0 1.562rem;
   }
 }
 @media (max-width: 767px) {
   .contact-section {
-    padding: 80px 0 20px;
+    padding: 5rem 0 1.25rem;
   }
 }
 .contact-section .contact-item-wrapper .contact-item {
   background: var(--primary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 10px;
+  border: 0.125rem solid var(--secondary-color);
+  border-radius: 0.625rem;
   display: flex;
-  margin-bottom: 30px;
-  padding: 20px 30px;
+  margin-bottom: 1.875rem;
+  padding: 1.25rem 1.875rem;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+@media only screen and (min-width: 992px) {
+  .contact-section .contact-item-wrapper .contact-item {
+    padding: 1.25rem;
+    place-items: center;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .contact-section .contact-item-wrapper .contact-item {
-    padding: 20px;
+    padding: 1rem;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -702,10 +722,10 @@ p {
   border-radius: 50%;
   color: var(--primary-color);
   display: flex;
-  font-size: 22px;
+  font-size: 1.375rem;
   justify-content: center;
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -714,59 +734,60 @@ p {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .contact-section .contact-item-wrapper .contact-item .contact-content {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
 }
 @media only screen and (max-width: 1199px) {
   .contact-section .contact-item-wrapper .contact-item .contact-content {
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 1rem;
   }
   .contact-section .contact-item-wrapper .contact-item .contact-icon {
-    margin-right: 20px;
+    margin-right: 1.25rem;
+    margin-top: 1rem;
   }
 }
 @media (max-width: 767px) {
   .social-media-icons {
-    margin-left: 4.5rem;
+    margin-left: 2rem;
   }
 }
 .contact-section .contact-item-wrapper .contact-item .contact-content h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
 }
 .contact-section .contact-item-wrapper .contact-item .contact-content p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .contact-wrapper {
   background: var(--primary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 10px;
+  border: 0.125rem solid var(--secondary-color);
+  border-radius: 0.625rem;
   margin-left: 0px;
-  padding: 50px 40px;
+  padding: 3.125rem 2.5rem;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+@media only screen and (min-width: 1200px) {
   .contact-wrapper {
-    margin-left: 30px;
+    margin-left: 1.875rem;
   }
 }
 .contact-wrapper .section-title {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .contact-wrapper .section-title h2 {
-  margin: 14px 0 57px;
+  margin: 0.875rem 0 3.562rem;
 }
 .contact-wrapper .section-title p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .contact-section .container .p {
   color: var(--primary-color);
-  padding-top: 70px;
+  padding-top: 4.375rem;
 }
 .social-media-icons {
   display: flex;
@@ -774,10 +795,10 @@ p {
 }
 .lni-icon {
   color: var(--secondary-color);
-  font-size: 50px;
-  margin: 10px;
-  padding: 10px 0;
-  width: 50px;
+  font-size: 3.125rem;
+  margin: 0.625rem;
+  padding: 0.625rem 0;
+  width: 3.125rem;
 }
 .lni-icon:hover {
   transform: rotate(360deg)  scale(180%);
@@ -787,8 +808,8 @@ p {
 /* footer section */
 #footer {
   background-color: var(--primary-color);
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-size: 16px;
+  letter-spacing: 0.187rem;
   padding: 2% 5% 2%;
   text-align: center;
 }
