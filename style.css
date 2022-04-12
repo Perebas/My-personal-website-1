@@ -256,6 +256,7 @@ p {
   border-radius: .3rem;
   color: var(--secondary-color);
   display: flex;
+  font-size: 120%;
   font-weight: 500;
   padding: .6rem 1rem;
   position: relative;
@@ -489,7 +490,7 @@ p {
 .header-eight .header-content h1 {
   color: var(--secondary-color);
   font-family: 'Patrick Hand CS', cursive;
-  font-size: 2rem;
+  font-size: rem;
   font-weight: 700;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -506,11 +507,11 @@ p {
 }
 @media (max-width: 768px) {
   .header-eight .header-content h1  {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.3rem;
   }
   .header-eight .header-content h1 span {
-    font-size: 100%;
+    font-size: 80%;
     line-height: 1.3rem;
     margin-left: -2rem;
     padding: 1.9rem;
@@ -570,15 +571,21 @@ p {
   border: .12rem solid var(--secondary-color);
   border-radius: .2rem;
   color: var(--secondary-color);
-  font-size: 100%;
+  font-size: 110%;
   font-weight: 600;
   margin-right: 25px;
   padding: .7em;
   position: relative;
   text-transform: capitalize;
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about-five-content .about-five-tab nav button {
+    font-size: 100%;
+  }
+}
 @media (max-width: 768px) {
   .about-five-content .about-five-tab nav button {
+    font-size: 1.3em;
     margin: 0;
     margin-bottom: .6rem;
     width: 100%;
@@ -685,7 +692,7 @@ p {
 }
 .card-text {
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 2rem 0;
 }
 .btn {
@@ -839,7 +846,7 @@ p {
   justify-content: center;
 }
 .social-media-block {
-  margin: 0 1rem;
+  margin: 0 auto;
 }
 .lni-icon {
   color: var(--secondary-color);
@@ -853,11 +860,11 @@ p {
   transition: 0.3s linear;
 }
 @media (max-width: 768px) {
-  .social-media-block {
-    margin: 0 .4rem;
+  .social-media-block:last-child {
+    margin-right: -15px;
   }
   .lni-icon {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
