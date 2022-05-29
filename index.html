@@ -1,213 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wendel Santos | Web Developer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wendel Santos | Web Developer</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico?v=2">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico?v=2">
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a145772b63.js" crossorigin="anonymous"></script>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css"/>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- Java Script -->
-    <script defer src="script.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a145772b63.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Java Script -->
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navbar Start -->
-    <header class="navbar">
-        <div class="container row">
-            <a href="#" class="logo">W S M</a>
-            <button class="nav-toggle" aria-label="open navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link active">HOME</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Navbar Start -->
+  <header class="navbar">
+    <div class="container row">
+      <a href="#" class="logo">W S M</a>
+      <button class="nav-btn open-nav-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav nav-primary">
+        <div class="nav nav-secondary">
+          <button class="nav-btn close-nav-btn">
+            <i class="xxx fa-solid fa-xmark"></i>
+          </button>
+          <div class="sidebar-content">
+            <div>
+              <a class="sidebar-logo" href="index.html">W S M</a>
+            </div>
+            <br>
+            <div class="sidebar-menu">
+              <h5 class="titles">Quick Links</h5>
+              <ul class="sidebar-menu-list">
+                <li><a class="sidebar-menu-list-link" href="#home">Home</a></li>
+                <li><a class="sidebar-menu-list-link" href="#about">About Me</a></li>
+                <li><a class="sidebar-menu-list-link" href="#projects">Projects</a></li>
+                <li><a class="sidebar-menu-list-link" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-social">
+              <h5 class="titles">Follow Me On</h5>
+              <ul>
+                <li class="sidebar-social-list">
+                  <a class="sidebar-social-link" href="https://www.instagram.com/wendel._.santos/"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="sidebar-social-list">
+                  <a class="sidebar-social-link" href="https://www.facebook.com/wendel.santos.58760"><i
+                      class="fa-brands fa-facebook-square"></i></a>
+                </li>
+                <li class="sidebar-social-list">
+                  <a class="sidebar-social-link" href="https://github.com/wendel-santos"><i class="fa-brands fa-github-square"></i></a>
+                </li>
+                <li class="sidebar-social-list">
+                  <a class="sidebar-social-link" href="https://www.linkedin.com/in/wendel-santos-dev/"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <!-- Intro Start -->
-    <section class="intro" id="intro">
-        <div class="container row">
-            <div class="intro-text">
-                <h1 class="intro-title">Hey dude... it's me, <span class="intro-span">Wendel.</span></h1>
-                <p class="intro-p">A web developer.</p>
-            </div>
-            <div class="intro-image">
-                <img class="intro-picture" src="images/wendel-1.jpg" alt="My picture smiling"/>
-            </div>
         </div>
+      </div>
+      <div class="overlay-left"></div>
+    </div>
+  </header>
+
+  <!-- Intro Start -->
+  <section class="intro" id="intro">
+    <div class="container row">
+      <div class="intro-text">
+        <h1 class="intro-title">Hey dude... it's me, <span class="intro-span">Wendel.</span></h1>
+        <p class="intro-p">A web developer.</p>
+      </div>
+      <div class="intro-image">
+        <img class="intro-picture" src="images/wendel-1.jpg" alt="My picture smiling" />
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about-title">About Me</h2>
+        <div class="row">
+          <div class="col about-image">
+            <img class="about-picture" src="images/wendel-2.jpg" alt="My picture looking in the distance." />
+          </div>
+          <div class="col about-content">
+            <div class="tab-content">
+              <p class="tab-content-p">Hi, my name is Wendel Santos Moura and I'm 22 years old. Currently, I'm based in
+                Bahia, Brazil.</p>
+              <p class="tab-content-p">I started on this programming world in the beginning of 2022, thanks to a big
+                friend of mine. And here below, are just a few things that I'm passionate about.</p>
+              <p class="tab-content-p">My family, biking, The Beatles, laughs, music (specially from the '60s), my friends, reading, chocolate, popcorn, and myself, because I'm hilarious \o/.</p>
+            </div>
+          </div>
+        </div>
+        <p class="phrase">“Living is easy with eyes closed, misunderstanding all you see.” - The Beatles</p>
+      </div>
     </section>
 
-    <main class="main">
-        <!-- About Section Start -->
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="about-title">About Me</h2>
-                <div class="row">
-                    <div class="col about-image">
-                        <img class="about-picture" src="images/wendel-2.jpg" alt="My picture looking in the distance."/>
-                    </div>
-                    <div class="col about-content">
-                        <div class="tab-content">
-                            <p class="tab-content-p">Hi, my name is Wendel Santos Moura and I'm 22 years old. Currently, I'm based in Bahia, Brazil.</p>
-                            <p class="tab-content-p">I started on this programming world in the beginning of 2022, thanks to a big friend of mine.</p>
-                            <p>And here, are just a few things that I'm passionate about:</p>
-                            <div class="about-tab">                                
-                                <div class="about-list">
-                                    <p class="about-item">° My family, ° Biking,</p>
-                                    <p class="about-item">° The Beatles, ° Laughs,</p>
-                                    <p class="about-item">° Music (specially from the '60s),</p>
-                                </div>
-                                <div class="about-list">
-                                    <p class="about-item">° My friends, ° Reading,</p>
-                                    <p class="about-item">° Chocolate, ° Popcorn,</p>
-                                    <p class="about-item">° Myself, because I'm hilarious \o/.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="phrase">“Living is easy with eyes closed, misunderstanding all you see.” - The Beatles</p>
+    <!-- Projects Section Start -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="projects-title">My Best Projects</h2>
+        <div class="row">
+          <div class="card">
+            <img src="images/projects/rocky.png" class="card-img" alt="The photo of a raccoon with some texts around.">
+            <div class="card-body">
+              <h3 class="card-title">Rocky Raccoon</h3>
+              <p class="card-text">Just a simple page about the history behind The Beatles' Rocky Raccoon song.</p>
+              <a href="https://wendel-santos.github.io/Rocky-Raccoon/" class="card-btn">Preview</a>
             </div>
-        </section>
-
-        <!-- Projects Section Start -->
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2 class="projects-title">My Best Projects</h2>
-                <div class="row">
-                    <div class="card">
-                        <img src="images/projects/rocky.png" class="card-img" alt="The photo of a raccoon with some texts around.">
-                        <div class="card-body">
-                            <h3 class="card-title">Rocky Raccoon</h3>
-                            <p class="card-text">Just a simple page about the history behind The Beatles' Rocky Raccoon song.</p>
-                            <a href="https://perebas.github.io/Rocky-Raccoon/" class="card-btn">Preview</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/projects/cv2.jpg" class="card-img" alt="A mountain with some words upon it.">
-                        <div class="card-body">
-                            <h3 class="card-title">Second "Website"</h3>
-                            <p class="card-text">Instead of HTML, like the previous one, here I used some CSS learned.</p>
-                            <a href="https://perebas.github.io/cv-2.0/" class="card-btn">Preview</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/projects/form.png" class="card-img" alt="A green formulary.">
-                        <div class="card-body">
-                            <h3 class="card-title">Formulary</h3>
-                            <p class="card-text">Just a random form to put in practice some of the HTML and CSS learned.</p>
-                            <a href="https://perebas.github.io/Form/" class="card-btn">Preview</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/projects/dicee.png" class="card-img" alt="Two dices.">
-                        <div class="card-body">
-                            <h3 class="card-title">Dicee Game</h3>
-                            <p class="card-text">Don't have a dice to decide a dispute? Don't worry, the Dicee Game will do that for you.</p>
-                            <a href="https://perebas.github.io/Dicee/" class="card-btn">Preview</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/projects/tindog.png" class="card-img" alt="The interface of a website with a dog's photo in a cellphone.">
-                        <div class="card-body">
-                            <h3 class="card-title">Tindog</h3>
-                            <p class="card-text">Your pet's problem ends now. On Tindog, they can finally find their soulmate.</p>
-                            <a href="https://perebas.github.io/Tindog/" class="card-btn">Preview</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/projects/drumkit.png" class="card-img" alt="5 images of drum parts, each one with a letter.">
-                        <div class="card-body">
-                            <h3 class="card-title">Drum Kit</h3>
-                            <p class="card-text">Now, you can pretend to be John Bonham, Keith Moon or any other drum legend...</p>
-                            <a href="https://perebas.github.io/Drum-Kit/" class="card-btn">Preview</a>
-                        </div>
-                    </div>
-                </div>
-                <p class="phrase projects-phrase">“There is always a way - if you are committed.” - Tony Robbins</p>
+          </div>
+          <div class="card">
+            <img src="images/projects/cv2.jpg" class="card-img" alt="A mountain with some words upon it.">
+            <div class="card-body">
+              <h3 class="card-title">Second "Website"</h3>
+              <p class="card-text">Instead of HTML, like the previous one, here I used some CSS learned.</p>
+              <a href="https://wendel-santos.github.io/cv-2.0/" class="card-btn">Preview</a>
             </div>
-        </section>
-
-        <!-- Contact Section Start -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col contact-wrapper">
-                        <div class="row">
-                            <div class="col col-contact-wrapper">
-                                <h2 class="contact-title">Contact Me</h2>
-                                <p class="contact-wrapper-text">I ❤️ to collaborate. I'm currently looking for other creative minds to work, grow and network.</p>
-                                <p class="contact-wrapper-text-two">So, smash one of these icons and get in touch!</p>
-                            </div>
-                        </div>
-                        <div class="social-media-icons">
-                            <div class="social-media-block">
-                                <a href="https://www.instagram.com/wendel._.santos/"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                            <div class="social-media-block">
-                                <a href="https://www.facebook.com/wendel.santos.58760"><i class="fa-brands fa-facebook-square"></i></a>
-                            </div>
-                            <div class="social-media-block">
-                                <a href="https://github.com/Perebas"><i class="fa-brands fa-github-square"></i></a>
-                            </div>
-                            <div class="social-media-block">
-                                <a href="https://www.linkedin.com/in/wendel-santos-96b7b2230/"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col contact-item-wrapper">
-                        <div class="col contact-item">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="contact-content">
-                                <h4 class="contact-content-title">Phone Number</h4>
-                                <p>WhatsApp & Telegram: +55 (77) 98828-6081</p>
-                            </div>
-                        </div>
-                        <div class="col contact-item">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="contact-content">
-                                <h4 class="contact-content-title">Location</h4>
-                                <p>Vitória da Conquista, Bahia, Brazil, Earth, Via Lactea</p>
-                            </div>
-                        </div>
-                        <div class="col contact-item">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div class="contact-content">
-                                <h4 class="contact-content-title">Schedule</h4>
-                                <p>24 Hours, 7 Days Open</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="phrase">“And God said “Love your enemy!” and I obeyed him and loved myself.” - Klalil Gibran</p>
+          </div>
+          <div class="card">
+            <img src="images/projects/form.png" class="card-img" alt="A green formulary.">
+            <div class="card-body">
+              <h3 class="card-title">Formulary</h3>
+              <p class="card-text">Just a random form to put in practice some of the HTML and CSS learned.</p>
+              <a href="https://wendel-santos.github.io/Form/" class="card-btn">Preview</a>
             </div>
-        </section>
-    </main>
+          </div>
+          <div class="card">
+            <img src="images/projects/dicee.png" class="card-img" alt="Two dices.">
+            <div class="card-body">
+              <h3 class="card-title">Dicee Game</h3>
+              <p class="card-text">Don't have a dice to decide a dispute? Don't worry, the Dicee Game will do that for
+                you.</p>
+              <a href="https://wendel-santos.github.io/Dicee/" class="card-btn">Preview</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/projects/tindog.png" class="card-img"
+              alt="The interface of a website with a dog's photo in a cellphone.">
+            <div class="card-body">
+              <h3 class="card-title">Tindog</h3>
+              <p class="card-text">Your pet's problem ends now. On Tindog, they can finally find their soulmate.</p>
+              <a href="https://wendel-santos.github.io/Tindog/" class="card-btn">Preview</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/projects/drumkit.png" class="card-img"
+              alt="5 images of drum parts, each one with a letter.">
+            <div class="card-body">
+              <h3 class="card-title">Drum Kit</h3>
+              <p class="card-text">Now, you can pretend to be John Bonham, Keith Moon or any other drum legend...</p>
+              <a href="https://wendel-santos.github.io/Drum-Kit/" class="card-btn">Preview</a>
+            </div>
+          </div>
+        </div>
+        <p class="phrase projects-phrase">“There is always a way - if you are committed.” - Tony Robbins</p>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container"><p class="footer-p">&copy; Copyright 2022 Wendel Santos</p></div>
-    </footer>
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col contact-wrapper">
+            <div class="row">
+              <div class="col col-contact-wrapper">
+                <h2 class="contact-title">Contact Me</h2>
+                <p class="contact-wrapper-text">I ❤️ to collaborate. I'm currently looking for other creative minds to
+                  work, grow and network.</p>
+                <p class="contact-wrapper-text-two">So, smash one of these icons and get in touch!</p>
+              </div>
+            </div>
+            <div class="social-media-icons">
+              <div class="social-media-block">
+                <a href="https://www.instagram.com/wendel._.santos/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="social-media-block">
+                <a href="https://www.facebook.com/wendel.santos.58760"><i class="fa-brands fa-facebook-square"></i></a>
+              </div>
+              <div class="social-media-block">
+                <a href="https://github.com/wendel-santos"><i class="fa-brands fa-github-square"></i></a>
+              </div>
+              <div class="social-media-block">
+                <a href="https://www.linkedin.com/in/wendel-santos-dev/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col contact-item-wrapper">
+            <div class="col contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-content">
+                <h4 class="contact-content-title">Phone Number</h4>
+                <p>WhatsApp & Telegram: +55 (77) 98828-6081</p>
+              </div>
+            </div>
+            <div class="col contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-content">
+                <h4 class="contact-content-title">Location</h4>
+                <p>Vitória da Conquista, Bahia, Brazil, Earth, Via Lactea</p>
+              </div>
+            </div>
+            <div class="col contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-content">
+                <h4 class="contact-content-title">Schedule</h4>
+                <p>24 Hours, 7 Days Open</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phrase">“And God said “Love your enemy!” and I obeyed him and loved myself.” - Klalil Gibran</p>
+      </div>
+    </section>
+  </main>
 
-    <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container"><p class="footer-p">&copy; Copyright 2022 Wendel Santos</p></div>
+  </footer>
+
+  <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up-long"></i></a>
 </body>
 </html>
