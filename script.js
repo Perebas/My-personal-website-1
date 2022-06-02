@@ -2,7 +2,6 @@ const openNavBtn = document.querySelector('.open-nav-btn')
 const closeNavBtn = document.querySelector('.close-nav-btn')
 const nav = document.querySelectorAll('.nav')
 const overlayLeft = document.querySelector('.overlay-left')
-const scrollTopButton = document.querySelector('.scroll-top')
 
 openNavBtn.addEventListener('click', () => {
   nav.forEach(navElement => 
