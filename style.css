@@ -160,6 +160,19 @@ font-size: 1.2rem;
 }
 
 /*===== Navbar =====*/
+.change-language {
+  color: var(--secondary-color);
+  right: 2.5rem;
+  position: absolute;
+  top: .7rem;
+  width: 450px;
+}
+.brazil-flag {
+  right: 6rem;
+  position: absolute;
+  top: .5rem;
+  width: 2.5rem;
+}
 .navbar {
   background-color: var(--primary-color);
   padding: .5em 0;
