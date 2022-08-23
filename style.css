@@ -466,6 +466,9 @@ margin-left: 12.5%;
     max-width: 75%;
   }
   /* Navbar */
+   .logo {
+    top: .5rem;
+  }
   .change-language {
     width: 170px;
     top: 1rem;
@@ -487,6 +490,9 @@ margin-left: 12.5%;
 /* Media Querie max-width: 699px */
 @media (min-width: 431px) and (max-width: 699px) { 
   /* Navbar */
+   .logo {
+    top: .4rem;
+  }
   .change-language {
     width: 260px;
     top: .7rem;
@@ -522,6 +528,9 @@ margin-left: 12.5%;
 /* Media Querie min-width: 600px */
 @media (min-width: 600px) {
   /* Navbar */
+    .logo {
+    top: .5rem;
+  }
   .sidebar-logo {
     font-size: 2.2rem;
   }
@@ -580,7 +589,6 @@ margin-left: 12.5%;
   .logo {
     cursor: default;
     font-size: 1.8rem;
-    margin-top: .6rem;
   }
   .nav-btn {
     font-size: 1.9rem;
