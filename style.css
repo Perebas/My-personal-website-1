@@ -465,7 +465,7 @@ margin-left: 12.5%;
   img {
     max-width: 75%;
   }
-  /* Barra de Navegação */
+  /* Navbar */
   .change-language {
     width: 170px;
     top: 1rem;
@@ -487,6 +487,18 @@ margin-left: 12.5%;
 /* Media Querie max-width: 699px */
 @media (min-width: 431px) and (max-width: 699px) { 
   /* Navbar */
+  .change-language {
+    width: 260px;
+    top: .7rem;
+    right: 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .united-states-flag {
+    width: 2.2rem;
+    top: .5rem;
+    right: 4rem;
+  }
   .sidebar-logo {
     font-size: 1.8rem;
   }
