@@ -465,6 +465,19 @@ margin-left: 12.5%;
   img {
     max-width: 75%;
   }
+  /* Barra de Navegação */
+  .change-language {
+    width: 170px;
+    top: 1rem;
+    right: 0;
+    font-size: .8rem;
+    text-align: left;
+  }
+  .united-states-flag {
+    width: 1.4rem;
+    top: .9rem;
+    right: 2.8rem;
+  }
   /* Contact Section */
   .social-media-icons {
     max-width: 85%;
