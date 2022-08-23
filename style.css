@@ -595,9 +595,9 @@ margin-left: 12.5%;
     font-size: 1.9rem;
   }
   .open-nav-btn {
-    position: unset;
-    top: .95rem;
-    right: 6.3rem;
+    position: absolute;
+    right: 0;
+    top: .6rem;
   }
   .close-nav-btn {
     font-size: 2.2rem;
